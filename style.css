@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/mainpage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+}
+
+.top__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-top: 32px;
+}
+
+.button {
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234px;
+    height: 48px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+    margin-top: 44px;
+}
+
+/* Отсюда стилизация карточек с играми */
+
+.bottom {
+    height: 556px;
+    background-image: url(img/buttom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.content {
+    padding-top: 128px;
+    column-gap: 32px;
+    display: flex;
+}
+
+.game {
+    color: #FFF;
+    font-weight: 600;
+    line-height: 32px;
+    font-style: normal;
+    width: 379px;
+    height: 300px;
+    padding-left: 32px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 98px;
+    text-decoration: none;
+}
+
+.g-1 {
+    background-image: url(img/g1.jpg);
+    background-repeat: no-repeat;
+}
+
+.g-2 {
+    background-image: url(img/g2.jpg);
+    background-repeat: no-repeat;
+}
+
+.g-3 {
+    background-image: url(img/g3.jpg);
+    background-repeat: no-repeat;
+}
+
