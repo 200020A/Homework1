@@ -24,7 +24,7 @@ alert(ten / two);
 
 // Task 5
 let e = 2;
-result = e ** 5;
+let result = e ** 5;
 alert(`2 в 5 степени = ${result}`);
 
 // Task 6
