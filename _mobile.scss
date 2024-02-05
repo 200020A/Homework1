@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .top__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .act {
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+
+    .games__box__cart_image {
+        position: relative;
+        width: 343px;
+        height: 300px;
+    }
+}

@@ -1,101 +1,126 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 body {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .top {
-    height: 1024px;
-    background-image: url(img/mainpage.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 1024px;
+  background-image: url(img/mainpage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
-    color: #FFF;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 217px;
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 217px;
 }
 
 .top__text {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    padding-top: 32px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  padding-top: 15px;
 }
 
 .button {
-    border-radius: 30px;
-    background: #9C0332;
-    width: 234px;
-    height: 48px;
-    color: #FFF;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-size: 18px;
-    margin-top: 44px;
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 18px;
+  margin-top: 44px;
+  border: none;
+}
+.button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #e85d89;
+  box-shadow: inset 0 0 0 3px #f11d56;
 }
 
 /* Отсюда стилизация карточек с играми */
-
-.bottom {
-    height: 556px;
-    background-image: url(img/buttom.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+.games {
+  background-color: #000915;
 }
 
-.content {
-    padding-top: 128px;
-    column-gap: 32px;
-    display: flex;
+.games__box {
+  padding-bottom: 128px;
+  padding-top: 128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
-.game {
-    color: #FFF;
-    font-weight: 600;
-    line-height: 32px;
-    font-style: normal;
-    width: 379px;
+.games__box__cart {
+  display: flex;
+  position: relative;
+}
+.games__box__cart:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #09d0f8;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+
+.games__box__cart_image {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image), lightgray 50%/cover no-repeat;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .act {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .games__box__cart_image {
+    position: relative;
+    width: 343px;
     height: 300px;
-    padding-left: 32px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 98px;
-    text-decoration: none;
-}
-
-.g-1 {
-    background-image: url(img/g1.jpg);
-    background-repeat: no-repeat;
-}
-
-.g-2 {
-    background-image: url(img/g2.jpg);
-    background-repeat: no-repeat;
-}
-
-.g-3 {
-    background-image: url(img/g3.jpg);
-    background-repeat: no-repeat;
-}
-
+  }
+}/*# sourceMappingURL=style.css.map */
