@@ -36,18 +36,26 @@ alert(Number(a) + Number(b));
 // Task 5
 let day = prompt('Введите номер месяца');
 switch (day) {
-    case 'январь': console.log('Зима'); break;
-    case 'февраль': console.log('Зима'); break;
-    case 'декабрь': console.log('Зима'); break;
-    case 'март': console.log('Весна'); break;
-    case 'апрель': console.log('Весна'); break;
-    case 'май': console.log('Весна'); break;
-    case 'июнь': console.log('Лето'); break;
-    case 'июль': console.log('Лето'); break;
-    case 'август': console.log('Лето'); break;
-    case 'сентябрь': console.log('Осень'); break;
-    case 'октябрь': console.log('Осень'); break;
-    case 'ноябрь': console.log('Осень'); break;
+    case 1:
+    case 2:
+    case 12:
+        alert('Зима')
+        break;
+    case 3:
+    case 4:
+    case 5:
+        alert('Весна')
+        break;
+    case 6:
+    case 7:
+    case 8:
+        alert('Лето')
+        break;
+    case 9:
+    case 10:
+    case 11:
+        alert('Осень')
+        break;
 default: console.log('Такого месяца не существует!'); break;} 
 
 // Task 6
