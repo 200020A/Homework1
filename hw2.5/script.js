@@ -5,7 +5,7 @@ let b = 4;
 function min(a, b) {
   if (a < b) {
     return a;
-  } else if (a > b) {
+  } else {
     return b;
   }
 }
@@ -26,19 +26,26 @@ function evenOrOdd(n) {
 console.log(evenOrOdd(2));
 console.log(evenOrOdd(5));
 
-// Task 3.1
-let e = prompt('Введите число');
-function enterNumber() {
-  e = e ** 2;
-  console.log(e);
-}
-function SquareNumber() {
-  e = e ** 2;
-  console.log(e);
+// Task 3
+
+function squareNumber(e) {
+  e = e ** 2
+  console.log(e)
 }
 
-enterNumber();
-SquareNumber();
+let e = Number(prompt("Введите число", 3))
+
+squareNumber(e)
+
+function squareNumber(d) {
+  d = d ** 2
+  return d
+}
+
+let d = Number(prompt("Введите число", 3))
+
+console.log(squareNumber(a))
+
 
 // Task 4
 let howAge = prompt('Сколько тебе лет');
@@ -60,7 +67,9 @@ function trueNamber() {
   if (!isNaN(firstNunber) && !isNaN(secondNumber)) {
     return console.log(firstNunber * secondNumber)
   }
-  else console.log(`Одно или оба значения не являются числом`)
+  else {
+    console.log(`Одно или оба значения не являются числом`)
+  }
 }
 trueNamber();
 
@@ -68,7 +77,7 @@ trueNamber();
 let num=prompt(`назовите число возводимое в куб`);
 function func(){
 if(!isNaN(num)){
-  return(console.log(num**3));
+  return num**3;
 }
 else {
   console.log(`Переданный параметр не является числом`)
