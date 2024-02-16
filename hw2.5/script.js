@@ -44,8 +44,8 @@ function squareNumber(d) {
 
 let d = Number(prompt("Введите число", 3))
 
-console.log(squareNumber(a))
-
+console.log(squareNumber(d))
+// Сначала выстовляла 'а', заметила повтаряющиеся переменные, поменяла и не заметила, что оставила ее
 
 // Task 4
 let howAge = prompt('Сколько тебе лет');
