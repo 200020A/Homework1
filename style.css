@@ -53,6 +53,7 @@ body {
   line-height: 32px;
   padding-top: 15px;
   padding-bottom: 44px;
+  max-width: 466px;
 }
 
 .button {
@@ -111,7 +112,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 282px;
-  padding-bottom: 282px;
+  padding-bottom: 150px;
 }
 .seasons__game {
   display: flex;
@@ -152,6 +153,58 @@ body {
   border: none;
 }
 .seasons__button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #e85d89;
+  box-shadow: inset 0 0 0 3px #f11d56;
+}
+
+.words {
+  height: 800px;
+  background: #000915;
+  box-sizing: border-box;
+  padding-bottom: 239px;
+  padding-top: 239px;
+}
+.words__content {
+  display: flex;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.words__content_box_left {
+  width: 600px;
+}
+.words__content_box_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 50px;
+}
+.words__content_box_right_header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.words__content_box_right_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.words__button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 18px;
+  border: none;
+}
+.words__button:hover {
   background: rgba(0, 0, 0, 0);
   color: #e85d89;
   box-shadow: inset 0 0 0 3px #f11d56;
@@ -212,5 +265,40 @@ body {
     height: 236px;
     padding-left: 16px;
     padding-top: 64px;
+  }
+  .words {
+    padding-bottom: 128px;
+    padding-top: 85px;
+  }
+  .words__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 64px;
+  }
+  .words__content_box_right {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+  }
+  .words__content_box_right_header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 59px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .words__content_box_right_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .words__content_box_left {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
