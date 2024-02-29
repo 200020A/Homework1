@@ -16,19 +16,17 @@ function seasonsGame() {
 
 
     function fruits () {
-        let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-      console.log(arr);
-      let newArr = [...arr].sort(() => Math.random() - 0.5);
-      alert(newArr);
-      let userAnswer = prompt('Чему равнялся первый элемент массива?');
-      let userAnswerTwo = prompt('Чему равнялся последний элемент массива?');
-       let result = newArr[0] ;
-      let resultTwo = newArr[arr.length - 1];
-      if (userAnswer.toLowerCase() === result.toLowerCase() && userAnswerTwo.toLowerCase() === resultTwo.toLowerCase() ) {
-          alert('Поздравляем ! Вы угадали оба элемента !!!');
-      } else if (userAnswer.toLowerCase() === result.toLowerCase() || userAnswerTwo.toLowerCase() === resultTwo.toLowerCase()) {
-          alert('Вы были близки к победе!');
-      } else  {
-          alert('Вы не угадали');
-      };
-      };
+        let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+        fruit = fruit.sort(() => Math.random() - 0.5);
+        alert(fruit);
+        let arrFruit = prompt('Чему равнялся первый элемент массива?');
+        let endFruit = prompt('Чему равнялся последний элемент массива?');
+        if (arrFruit === fruit[0] && endFruit === fruit[fruit.length - 1]) {
+            alert('Поздравляем ! Вы угадали оба элемента !!!');
+        } else if (arrFruit === fruit[0] || endFruit === fruit[fruit.length - 1]) {
+            alert('Вы были близки к победе!');
+        } else {
+            alert('Вы не угадали');
+        }
+    };
+    

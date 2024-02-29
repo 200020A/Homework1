@@ -28,29 +28,27 @@ console.log(Math.round(str));
 // Task 4
 const multiNumbs = [52, 53, 49, 77, 21, 32];
 
-console.log(Math.max(52, 53, 49, 77, 21, 32));
-console.log(Math.min(52, 53, 49, 77, 21, 32.));
+console.log(Math.max(...multiNumbs));
+console.log(Math.min(...multiNumbs));
 
 // Task 5
-function getRandomInt(min, max) {
-    return Math.round(Math.random() * max + 1);
-}
-
-console.log(getRandomInt(1, 10));
+function getRandomIn(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  console.log(getRandomIn(1, 10));
 
 // Task 6
-function getRandomInt(minValue, maxValue) {
-
-    return Math.round(Math.random() * (maxValue - minValue)) + minValue;
-
-}
-console.log(getRandomInt(3, 9));
+function getRandomNum(a) {
+    return(Array.from(Array(Math.floor(a / 2)), () => Math.round(Math.random() * a)));
+ }
+ console.log(getRandomNum(12));
 
 // Task 7
-function getRandomInt(min, max) {
+function getRandomArr(min, max) {
     return (Math.round(Math.random() * (max - min)) + min);
 }
-console.log(getRandomInt(2, 15));
+console.log(getRandomArr(2, 15));
 
 // Task 8
 let currentDate = new Date();
